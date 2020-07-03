@@ -6,13 +6,10 @@ msg:
   list: one,two,three
   map: "{name:'raja',sub:'java'}"
 db:
-   connection: some connection
+   connection: test connection
    port: 1234
    host: local
 
-
-spring:
-  profiles:
-    active: test
 #actuaror properties
+
 #management.endpoints.web.exposure.include:"*"
