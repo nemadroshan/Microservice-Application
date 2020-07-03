@@ -7,7 +7,7 @@ public class MovieSummary {
     private String overview;
 
     public MovieSummary() {
-        System.out.printf("Movie summary 0-param constructor");
+        System.out.print("Movie summary 0-param constructor");
     }
 
     public MovieSummary(String id, String title, String overview) {
