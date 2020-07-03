@@ -1,0 +1,14 @@
+server:
+  port: 9001
+msg:
+  name: Shubhan
+  val: JAVAKING
+  list: one,two,three
+  map: "{name:'raja',sub:'java'}"
+db:
+   connection: some connection
+   port: 1234
+   host: local
+
+#actuaror properties
+#management.endpoints.web.exposure.include:"*"
