@@ -1,5 +1,6 @@
 package com.rn.springbootconfig.com.rn.springbootconfig.resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,9 @@ import java.util.Map;
 
 @RestController
 public class MyController {
+
+    @Autowired
+    private DemoConfig demoConfig;
 
     @Value("${msg.val}")
     private String msg;
@@ -24,6 +28,6 @@ public class MyController {
 
     @GetMapping("/greet")
     public String greeting() {
-        return " "+msg+"------"+msg2+"---------"+myList+"------"+myMap;
+        return " "+msg+"------"+msg2+"---------"+myList+"------"+myMap+"-----------"+demoConfig;
     }
 }
