@@ -1,5 +1,6 @@
 server:
   port: 9001
+
 msg:
   name: Shubhan
   val: JAVAKING
@@ -14,5 +15,10 @@ db:
 spring:
   profiles:
     active: test
+  cloud:
+    config:
+      uri: http://localhost:8888
+  application:
+    name: spring-boot-config
 #actuaror properties
 #management.endpoints.web.exposure.include:"*"
