@@ -15,9 +15,9 @@ db:
 spring:
   profiles:
     active: test
-  cloud:
-    config:
-      uri: http://localhost:8888
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
   application:
     name: spring-boot-config
 #actuaror properties
