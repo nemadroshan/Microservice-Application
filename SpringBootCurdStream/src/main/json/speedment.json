@@ -1,0 +1,115 @@
+{
+  "config" : {
+    "speedmentVersion" : "Speedment:3.2.9",
+    "nameProtected" : false,
+    "expanded" : true,
+    "appId" : "0fc89c77-9ef1-419c-b950-5b2f313dd4a0",
+    "companyName" : "example",
+    "name" : "curddemo",
+    "packageLocation" : "src/main/java/",
+    "id" : "curddemo",
+    "packageName" : "com.example.demo.generated",
+    "dbmses" : [
+      {
+        "nameProtected" : true,
+        "expanded" : true,
+        "port" : 3306,
+        "schemas" : [
+          {
+            "nameProtected" : true,
+            "tables" : [
+              {
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "indexes" : [
+                  {
+                    "expanded" : false,
+                    "unique" : true,
+                    "name" : "PRIMARY",
+                    "indexColumns" : [
+                      {
+                        "orderType" : "ASC",
+                        "expanded" : true,
+                        "name" : "id",
+                        "id" : "id",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "id" : "PRIMARY",
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "nameProtected" : true,
+                    "expanded" : true,
+                    "nullable" : true,
+                    "autoIncrement" : false,
+                    "name" : "name",
+                    "nullableImplementation" : "OPTIONAL",
+                    "id" : "name",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "age",
+                    "id" : "age",
+                    "ordinalPosition" : 3,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : true,
+                    "name" : "address",
+                    "id" : "address",
+                    "ordinalPosition" : 4,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "person",
+                "id" : "person",
+                "enabled" : true
+              }
+            ],
+            "expanded" : true,
+            "name" : "curddemo",
+            "id" : "curddemo",
+            "enabled" : true
+          }
+        ],
+        "typeName" : "MySQL",
+        "ipAddress" : "127.0.0.1",
+        "name" : "curddemo",
+        "connectionUrl" : "jdbc:mysql://localhost:3306/curddemo",
+        "id" : "curddemo",
+        "enabled" : true,
+        "username" : "root"
+      }
+    ],
+    "enabled" : true
+  }
+}
